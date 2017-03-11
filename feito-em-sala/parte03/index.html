@@ -1,17 +1,18 @@
 <html ng-app="app">
-  <head>
+<head>
     <title>Parte03</title>
-  </head>
-  <body ng-controller="IndexController">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body ng-controller="IndexController">
 
-      <table>
-        <tr ng-repeat="doce in doces">
-          <td>{{doce.nome}}</td>
-          <td>{{doce.cor}}</td>
-        </tr>
-      </table>
+<table>
+    <tr ng-repeat="doce in doces">
+        <td>{{doce.nome}}</td>
+        <td>{{doce.cor}}</td>
+    </tr>
+</table>
 
-  </body>
+</body>
 </html>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
 <script src="app.js"></script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pessoaa VEEEEY</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<form action="" name="formPessoaCreate" data-ng-submit="save(pessoa)">
+
+    <div class="col-md-12 col-lg-12">
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input type="text" name="nome" class="form-control" data-ng-model="pessoa.nome" required/>
+            <p data-ng-if="formPessoaCreate.nome.$invalid&&formPessoa.nome.$dirty" class="help-block">
+                Seu nome é obrigatório
+            </p>
+
+        </div>
+        <div class="form-group">
+            <label>secondNome</label>
+            <input type="text" name="secondNome" class="form-control" data-ng-model="pessoa.secondNome" required/>
+            <p data-ng-if="formPessoaCreate.secondNome.$invalid && formPessoa.secondNome.$dirty" class="help-block">
+                Seu sobrenome é obrigatório
+            </p>
+        </div>
+
+        <button type="submit">Salvar</button>
+
+    </div>
+</form>
+
+</body>
+</html>
